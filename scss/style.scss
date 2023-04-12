@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+// Обнуляючий стиль
+@import '_null';
+body{
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    background-color: #302C42;
+    color: #fff
+}
+.main{
+    min-height: 100vh
+}
+@import '_var_mixin';
+
+@import '_buttons';
+
+@import '_header';
+
+@import '_header-contacts-slider';
+
+@import '_introduction';
+
+@import '_why_build';
+
+@import '_brand';
+
+@import '_how-we-build';
+
+@import '_form';
+
+@import '_footer';
+
+@import './mobile-nav/_mobile-nav.scss';
+
+@import './mobile-nav/mobile-nav-icon';

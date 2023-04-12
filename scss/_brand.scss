@@ -1,0 +1,133 @@
+
+.brand__img{
+    @extend %flexStyleCenter;
+    flex-direction: column;
+    text-align: center;
+    gap: 11px;
+    max-width: 1272px;
+    height: 300px;
+    border-radius: 160px;
+    background-image:linear-gradient(180deg, rgb(65, 57, 81), rgba(0, 0, 0, 0.40)),url(./../img/users/girl-oculus.webp);
+    background-position: 40% 30%; 
+    background-size: 1740px 1160px;
+    transition: height 0.5s ease-in-out;
+    .brand__title--title {
+    @include fontStyle(36px, 700, 44px);
+        color: #fff;
+        }
+        .brand__title--subtitle {
+            @include fontStyle(36px, 400, 44px);
+        }
+}
+
+
+.brand__button{
+    position: absolute;
+    margin-top: 300px;
+    transition: margin-top 0.5s ease-in-out;
+}
+
+.brand__button img{
+    cursor: pointer;
+    border-radius: 50%;
+    background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 0px 15px;
+    rotate: 0deg;
+    transition: rotate 0.4s ease-in;
+    &:hover{
+        background: linear-gradient(90deg, #8b7cd9 0%, #9b86f9 100%);
+    }
+}
+
+.brand__items{
+  margin-top: 70px;
+    .brand__item {
+        margin: 0 auto;
+        @extend %flexStyle;
+        height: 270px;
+    }
+        .swiper-slide1,
+        .swiper-slide2,
+        .swiper-slide3,
+        .swiper-slide4
+        {
+            display: flex;
+            justify-content: center;
+            width: 300px;
+            height: 230px;
+        }
+}
+.brand__items .swiper-button-next::after,
+.brand__items .swiper-button-prev::after {
+    content: '';
+}
+
+.custom__btn-brand {
+    margin-top: 60px;
+    padding: 10px 15px;
+    margin-left: 25px;
+    border-radius: 50%;
+    background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 0px 10px;
+}
+
+.custom__btn-brand1 {
+    margin-top: 60px;
+    padding: 10px 15px;
+    margin-right: 25px;
+    border-radius: 50%;
+    background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 0px 10px;
+}
+@media(min-width:1390px){
+    .custom__btn-brand,
+    .custom__btn-brand1 {
+           
+            display: none;
+        }
+}
+
+@media(max-width:985px){
+.brand__img {
+        .brand__title--title {
+            font-size: 26px;
+        }
+
+        .brand__title--subtitle {
+            font-size: 26px;
+        }
+
+ }
+        .brand__items{
+            margin-top: 50px;
+            .brand__item {
+                padding-top: 0px;
+            }
+        }
+    }
+@media(max-width:700px){
+    .brand__img{
+        border-radius: 90px;
+    }
+}
+@media(max-width:500px){
+    .brand__img{
+        border-radius: 70px;
+    }
+   
+}
+@media(max-width:400px) {
+    .custom__btn-brand {
+        margin-top: 100px;
+        width: 38px;
+        height: 38px;
+        margin-left: 9px;
+    }
+
+    .custom__btn-brand1 {
+        margin-top: 100px;
+        width: 38px;
+        height: 38px;
+        margin-right: 9px;
+    }
+}

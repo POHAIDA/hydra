@@ -1,0 +1,29 @@
+//Змінні
+
+$white:#fff;
+$db:#343045;
+
+// Шаблони
+%flexStyle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+%flexStyleCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flexStyleColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+// Міксини
+
+@mixin fontStyle($fs,$fw,$lh){
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+
+}
